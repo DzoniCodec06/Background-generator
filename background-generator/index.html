@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="canvas-view">
+        <canvas id="canv"></canvas>
+        <button id="roll-random"><i class="fa-solid fa-dice-five"></i></button>
+    </div>
+    <div class="properties-view">
+        <h1>Properties</h1>
+        <div class="properties">
+            <div class="background-color-picker">
+                <h3>Background color:</h3>
+                <div class="color-pick">
+                    <input type="color" id="bckg-preview">
+                    <h1 class="hash">#</h1>
+                    <input type="text" id="bckg-value" maxlength="6">                
+                </div>
+            </div>
+            <div class="circles-color-picker">
+                <h3>Circles color:</h3>
+                <div class="color-pick">
+                    <input type="color" id="clr-preview">
+                    <h1 class="hash">#</h1>
+                    <input type="text" id="clr-value" maxlength="6">              
+                </div>
+            </div>
+            <div class="crcles-radius-range">
+                <h3>Circle radius range:</h3>
+                <input type="range" id="radius-value" min="20" max="100" step="8">
+                <div class="start-values">
+                    <h3>20</h3>
+                    <h3>100</h3>
+                </div>
+            </div>
+            <div class="circles-number-selection">
+                <h3>Circles number:</h3>
+                <input type="range" id="number-value" min="5" max="20">
+                <div class="start-values">
+                    <h3>5</h3>
+                    <h3>20</h3>
+                </div>
+            </div>
+            <div class="download-button">
+                <button id="download-btn"><i class="fa-solid fa-download"></i> Download</button>
+            </div>  
+        </div>  
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
